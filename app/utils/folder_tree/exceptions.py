@@ -9,3 +9,11 @@ class ConfigError(FolderTreeError):
 class ValidationError(FolderTreeError):
     """Raised when the folder structure validation fails."""
     pass
+
+class StorageError(FolderTreeError):
+    """Raised when a storage operation (mkdir, write, etc.) fails."""
+    pass
+
+class MigrationError(FolderTreeError):
+    """Raised when a migration/move operation fails."""
+    pass
